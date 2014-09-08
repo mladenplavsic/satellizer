@@ -27,8 +27,6 @@
         },
         set: function(tokenStorage, namespace, token, options) {
 
-            console.log(options)
-
             switch (tokenStorage) {
                 case 'localStorage':
                     window.localStorage.setItem(namespace, token);
