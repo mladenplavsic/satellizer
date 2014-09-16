@@ -158,7 +158,6 @@ a {
   font-weight: bold;
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
-  transition: background-color 0.25s ease-out;
 }
 
 .btn-primary {
@@ -206,7 +205,11 @@ a {
 }
 
 .btn [class^='ion-'] {
-  margin-right: 6px;
+  margin-right: 5px;
+}
+
+.btn .fa {
+  margin-right: 5px;
 }
 
 /*********************
@@ -263,14 +266,14 @@ a {
 
 .btn-foursquare {
   color: #fff;
-  background-color: #0072b1;
-  border: 1px solid #00669e;
+  background-color: #f94877;
+  border: 1px solid #f8215a;
 }
 
 .btn-foursquare:hover,
 .btn-foursquare:focus {
   color: #fff;
-  background-color: #00598a;
+  background-color: #f71752;
 }
 
 .btn-github {
@@ -281,6 +284,18 @@ a {
 
 .btn-github:hover,
 .btn-github:focus {
+  color: #fff;
+  background-color: #303030;
+}
+
+.btn-yahoo {
+  color: #fff;
+  background-color: #720e9e;
+  border: 1px solid #580b75;
+}
+
+.btn-yahoo:hover,
+.btn-yahoo:focus {
   color: #fff;
   background-color: #303030;
 }

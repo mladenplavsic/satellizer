@@ -4,7 +4,7 @@
 [![Build Status](http://img.shields.io/travis/sahat/satellizer.svg?style=flat)](https://travis-ci.org/sahat/satellizer) 
 [![Code Climate](http://img.shields.io/codeclimate/github/sahat/satellizer.svg?style=flat)](https://codeclimate.com/github/sahat/satellizer) 
 [![Test Coverage](http://img.shields.io/codeclimate/coverage/github/sahat/satellizer.svg?style=flat)](https://codeclimate.com/github/sahat/satellizer)
-[![Version](http://img.shields.io/badge/version-0.6.1-orange.svg?style=flat)](https://www.npmjs.org/package/satellizer)
+[![Version](http://img.shields.io/badge/version-0.6.3-orange.svg?style=flat)](https://www.npmjs.org/package/satellizer)
 
 **:space_invader: Live Demo:** [https://satellizer.herokuapp.com](https://satellizer.herokuapp.com)
 
@@ -45,7 +45,7 @@ npm install satellizer --save
 or use the CDN:
 
 ```html
-<script src="//cdn.jsdelivr.net/satellizer/0.6.1/satellizer.min.js"></script>
+<script src="//cdn.jsdelivr.net/satellizer/0.6.3/satellizer.min.js"></script>
 ```
 
 ## Usage
@@ -125,7 +125,7 @@ $authProvider.signupUrl = '/auth/signup';
 $authProvider.loginRoute = '/login';
 $authProvider.signupRoute = '/signup';
 $authProvider.tokenName = 'token';
-$authProvider.tokenPrefix = 'satellizer';
+$authProvider.tokenPrefix = 'satellizer'; // Local storage name prefix
 $authProvider.unlinkUrl = '/auth/unlink/';
 
 // Facebook
@@ -213,16 +213,18 @@ $authProvider.oauth1({
 
 ## How It Works
 
-**Satellizer** relies on *Token-Based Authentication* with
+**Satellizer** relies on *token-based authentication* using
 [JSON Web Tokens](https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/) 
-instead of cookies and sessions. Each [Wiki](https://github.com/sahat/satellizer/wiki)
-sub-section below goes in-depth into how the authentication process works.
+instead of cookies. Each **Wiki** link below goes in-depth into how the 
+authentication process works.
 
-##### [★ Login with OAuth 2.0](https://github.com/sahat/satellizer/wiki/Login-with-OAuth-2.0)
-##### [★ Login with OAuth 1.0](https://github.com/sahat/satellizer/wiki/Login-with-OAuth-1.0)
-##### [★ Login with Email and Password](https://github.com/sahat/satellizer/wiki/Login-with-Email-and-Password)
-##### [★ Signup](https://github.com/sahat/satellizer/wiki/Signup)
-##### [★ Logout](https://github.com/sahat/satellizer/wiki/Logout)
+- [Login with OAuth 2.0](https://github.com/sahat/satellizer/wiki/Login-with-OAuth-2.0)
+- [Login with OAuth 1.0](https://github.com/sahat/satellizer/wiki/Login-with-OAuth-1.0)
+- [Login with Email and Password](https://github.com/sahat/satellizer/wiki/Login-with-Email-and-Password)
+- [Signup](https://github.com/sahat/satellizer/wiki/Signup)
+- [Logout](https://github.com/sahat/satellizer/wiki/Logout)
+
+**:bulb: Note:** To learn more about JSON Web Token (JWT) visit [JWT.io](http://jwt.io/).
 
 ## Obtaining OAuth Keys
 
@@ -383,7 +385,7 @@ of the languages on the *TODO* list.
 ## Credits
 
 Special thanks goes to [Alice Chen](https://github.com/chena) for all your hard work
-on the [Dropwizard](dropwizard.github.io) implementation and
+on the [Dropwizard](https://dropwizard.github.io) implementation and
 [Jesús Rodríguez](https://github.com/Foxandxss) for being so proactive and actively
 reporting bugs.
 
